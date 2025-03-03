@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaung Sit Naing - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #b249c5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-up {
+            transition: transform 0.3s ease;
+        }
+        .hover-up:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-3xl z-50">
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg border border-black/20">
+            <div class="flex justify-between items-center h-14 px-6">
+                <div class="text-2xl font-bold gradient-text">KSN</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-black hover:text-white transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-black hover:text-white transition-colors duration-300">About</a>
+                    <a href="#experience" class="text-black hover:text-white transition-colors duration-300">Experience</a>
+                    <a href="#projects" class="text-black hover:text-white transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="text-black hover:text-white transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-white text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden mt-2" id="mobile-menu">
+            <div class="bg-white/10 backdrop-blur-md rounded-xl border border-white/20 px-2 py-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-black hover:text-black hover:bg-gray-900 rounded-lg transition-all duration-300">Home</a>
+                <a href="#about" class="block px-3 py-2 text-black hover:text-black hover:bg-gray-900 rounded-lg transition-all duration-300">About</a>
+                <a href="#experience" class="block px-3 py-2 text-black hover:text-black hover:bg-gray-900 rounded-lg transition-all duration-300">Experience</a>
+                <a href="#projects" class="block px-3 py-2 text-black hover:text-black hover:bg-gray-900 rounded-lg transition-all duration-300">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-black hover:text-black hover:bg-gray-900 rounded-lg transition-all duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 via-purple-500 to-blue-500">
+        <div class="max-w-6xl mx-auto px-4 text-center text-white" data-aos="fade-up">
+            <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <img src="assets/photo/KSN-profile-1.jpg" alt="Profile" class="w-full h-full object-cover ">
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">Kaung Sit Naing</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Digital Marketing Supervisor | Freelancer</p>
+            <div class="flex justify-center gap-4">
+                <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">Get in Touch</a>
+                <a href="#projects" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition duration-300">View Projects</a>
+            </div>
+            <!-- <div class="mt-12 flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-blue-200 transition-colors duration-300">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 transition-colors duration-300">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 transition-colors duration-300">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2" data-aos="fade-right">
+                    <img src="./assets/photo/KSN-profile.jpg" alt="Profile" class="rounded-2xl shadow-2xl mx-auto transform hover:scale-105 transition duration-500">
+                </div>
+                <div class="w-full md:w-1/2" data-aos="fade-left">
+                    <p class="text-black text-lg leading-relaxed mb-8">
+                        I am a dedicated Digital Marketing Supervisor at Recycle King Company Limited, with a passion for creating impactful digital marketing strategies. As a freelancer, I also help businesses achieve their marketing goals through innovative solutions and data-driven approaches.
+                    </p>
+                    <p>
+                        Email: <a href="mailto:azar3lsmith@gmail.com" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">azar3lsmith@gmail.com</a>
+                    </p>
+                    <p>
+                        Phone: <a href="tel:+00000000000" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">+000000000</a>
+                    </p>
+                    <br>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 gradient-text">Skills</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-full hover:bg-blue-100 transition duration-300 hover-up">Digital Marketing</span>
+                                <span class="px-4 py-2 bg-purple-50 text-purple-600 rounded-full hover:bg-purple-100 transition duration-300 hover-up">Social Media Management</span>
+                                <span class="px-4 py-2 bg-pink-50 text-pink-600 rounded-full hover:bg-pink-100 transition duration-300 hover-up">Content Strategy</span>
+                                <span class="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-full hover:bg-indigo-100 transition duration-300 hover-up">SEO</span>
+                                <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-full hover:bg-blue-100 transition duration-300 hover-up">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Experience</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300" data-aos="fade-up">
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-0"></div>
+                    <h3 class="text-2xl font-semibold gradient-text">Digital Marketing Supervisor</h3>
+                    <p class="text-gray-600 text-lg">Recycle King Company Limited</p>
+                    <p class="text-gray-500 text-sm mb-4">Present</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Develop and implement digital marketing strategies
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Lead social media campaigns and content creation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Analyze marketing metrics and optimize campaigns
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Collaborate with cross-functional teams
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project placeholders -->
+                <a href="project.html" class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <div class="bg-gradient-to-br from-blue-500 to-purple-500 h-48 flex items-center justify-center">
+                                <i class="fas fa-rocket text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition duration-300">Future Project</h3>
+                            <p class="text-gray-600">Description will be added when project is available</p>
+                            <div class="mt-4 flex justify-end">
+                                <span class="text-blue-600 group-hover:translate-x-2 transition-transform duration-300">
+                                    View Details <i class="fas fa-arrow-right ml-1"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Add more project placeholders with different gradients and icons -->
+                <a href="project.html" class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <div class="bg-gradient-to-br from-purple-500 to-pink-500 h-48 flex items-center justify-center">
+                                <i class="fas fa-chart-line text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-purple-600 transition duration-300">Future Project</h3>
+                            <p class="text-gray-600">Description will be added when project is available</p>
+                            <div class="mt-4 flex justify-end">
+                                <span class="text-purple-600 group-hover:translate-x-2 transition-transform duration-300">
+                                    View Details <i class="fas fa-arrow-right ml-1"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="project.html" class="group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <div class="bg-gradient-to-br from-pink-500 to-red-500 h-48 flex items-center justify-center">
+                                <i class="fas fa-bullseye text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-pink-600 transition duration-300">Future Project</h3>
+                            <p class="text-gray-600">Description will be added when project is available</p>
+                            <div class="mt-4 flex justify-end">
+                                <span class="text-pink-600 group-hover:translate-x-2 transition-transform duration-300">
+                                    View Details <i class="fas fa-arrow-right ml-1"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-6 bg-white p-8 rounded-2xl shadow-xl" data-aos="fade-up">
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-medium" for="name">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-medium" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-medium" for="message">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-4 rounded-lg font-semibold hover:opacity-90 transition duration-300 transform hover:-translate-y-1">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4 gradient-text">Kaung Sit Naing</h3>
+                <p class="text-gray-400 mb-6">Digital Marketing Supervisor | Freelancer</p>
+                <!-- <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div> -->
+                <p class="text-gray-500">&copy; 2025 Kaung Sit Naing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
